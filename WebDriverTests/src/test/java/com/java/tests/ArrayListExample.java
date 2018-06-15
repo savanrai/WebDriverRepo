@@ -1,8 +1,6 @@
 package com.java.tests;
 
-import java.awt.List;
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.Iterator;
 
@@ -20,7 +18,6 @@ public class ArrayListExample {
 		
 		Iterator<String> itr =emp.iterator();
 		
-		
 		while(itr.hasNext()){
 		 String obj = itr.next();
 		 System.out.println(obj);
@@ -31,7 +28,11 @@ public class ArrayListExample {
 		for(String m:emp){
 			System.out.println(m);
 		}
-
+		
+		for(int i=0;i<emp.size();i++){
+			
+			System.out.println(emp.get(i));
+		}
 	}
 
 }
